@@ -19,17 +19,9 @@ namespace Michaels_programming_language
         throw new FileNotFoundException(path + " not found.");
       Program.program.Clear();
       Program.encoded_files.Clear();
-      if (File.ReadAllText(path) == "\n\n\n\nTrue")
-      {
-        Program.written.Clear();
-        Console.Clear();
-        Program.readend = true;
-      }
-      else
-      {
         Program.written = new List<KeyValuePair<char, ConsoleColor>>();
-        char key = Convert.ToChar(0);
-        char ch1 = Convert.ToChar(0);
+        char key = '\x0';
+        char ch1 = '\x0';
         TriBool triBool = TriBool.False;
         bool flag1 = false;
         string s = "";
@@ -173,4 +165,3 @@ namespace Michaels_programming_language
       }
     }
   }
-}

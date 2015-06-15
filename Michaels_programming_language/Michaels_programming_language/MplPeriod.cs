@@ -10,9 +10,9 @@ namespace Michaels_programming_language
   {
     LoadInstruction,
     Written,
-    Instance,
     MagicNumber,
     Password,
     LoadEncodedFiles,
+    Instance,
   }
 }
